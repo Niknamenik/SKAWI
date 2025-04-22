@@ -13,7 +13,7 @@
   <body>
     <div class="container">
       <header>
-        <img src="./img/photo_2025-04-15_23-32-44.jpg" alt="SKAWI Logo" />
+        <img src="./img/Logo.jpg" alt="SKAWI Logo" />
       </header>
 
       <section class="hero">
@@ -27,17 +27,17 @@
             >, od pierwszych kroków aż do zostania profesjonalnym traderem.
           </p>
         </div>
-        <div class="form-box">
+        <form action="./no-action" class="form-box">
           <h3>Zdobądź przewagę w swoim szkoleniu inwestycyjnym</h3>
-          <input type="text" placeholder="Imię i nazwisko" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Numer telefonu" />
+          <input type="text" placeholder="Imię i nazwisko" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Numer telefonu" required />
           <label
-            ><input type="checkbox" /> Zgadzam się z zapisami Polityki
+            ><input type="checkbox" required /> Zgadzam się z zapisami Polityki
             prywatności</label
           >
-          <button>Dołącz do Edutrading</button>
-        </div>
+          <button type="submit">Dołącz do Edutrading</button>
+        </form>
       </section>
 
       <section class="features">
@@ -137,5 +137,6 @@
         </button>
       </section>
     </div>
+    <script src="./scrypt.js"></script>
   </body>
 </html>
