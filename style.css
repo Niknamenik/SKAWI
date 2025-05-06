@@ -34,12 +34,13 @@ header img {
   padding: 40px 0;
   position: relative;
   padding-bottom: 25%;
+  min-height: 715px;
 }
 .hero_container .content {
   max-width: 600px;
 }
 .content h2 {
-  padding-bottom: 55px;
+  padding-bottom: 30px;
   font-size: 35px;
 }
 .highlight {
@@ -47,6 +48,7 @@ header img {
   font-weight: 900;
   padding-left: 150px;
   padding-bottom: 30px;
+  color: #ffffff;
 }
 .hero_container h1 {
   font-size: 2rem;
