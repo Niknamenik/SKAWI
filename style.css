@@ -75,7 +75,9 @@ header img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .form-box input[type="text"],
-.form-box input[type="email"] {
+.form-box input[type="email"],
+.form-box input[type="number"],
+.form-box select {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -162,6 +164,10 @@ header img {
   display: block;
   width: fit-content;
   border-radius: 5px;
+}
+
+li {
+  list-style: square;
 }
 
 @media (max-width: 768px) {
