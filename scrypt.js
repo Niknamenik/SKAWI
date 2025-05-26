@@ -4,6 +4,7 @@ const user = {
   Email: "",
   Phone: "",
   lenguage: "",
+  id: "",
 };
 const inputs = document.getElementsByTagName("input");
 const select = document.getElementById("leng_select");
@@ -13,5 +14,6 @@ mainForm.addEventListener("submit", (event) => {
   user.Email = inputs[1].value;
   user.Phone = inputs[2].value;
   user.lenguage = select.value;
+  user.id = +new Date();
   console.log(user);
 });
