@@ -154,7 +154,7 @@ header img {
 }
 .teacher img {
   margin: 0 auto;
-  width: 325px;
+  width: 100%;
 }
 #link-btn {
   margin-top: 20px;
@@ -179,9 +179,15 @@ li {
   list-style: url(./chekMark.svg);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .teachers-cards {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .teacher {
+    width: 50%;
+    min-width: 250px;
   }
 }
 @media (max-width: 768px) {
