@@ -69,9 +69,7 @@ header img {
 }
 #bg-img {
   position: absolute;
-  right: 60px;
-  top: -20px;
-  z-index: -1;
+  right: 20%;
   height: 500px;
 }
 .form-box {
@@ -143,6 +141,12 @@ header img {
 }
 .level-box strong {
   color: #005854;
+}
+.level-box h3 {
+  height: 10%;
+}
+.level-box ul {
+  padding-left: 20px;
 }
 .teachers_conteiner {
   margin-top: 50px;
