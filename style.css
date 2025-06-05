@@ -73,6 +73,9 @@ header img {
   height: 500px;
 }
 .form-box {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
