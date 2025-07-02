@@ -33,7 +33,6 @@ header img {
 }
 .hero_container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
   min-height: 500px;
@@ -54,6 +53,9 @@ header img {
   background-position: left;
   position: relative;
 }
+.main_info {
+  display: flex;
+}
 .highlight span {
   display: block;
   width: 60%;
@@ -67,15 +69,7 @@ header img {
   font-weight: 700;
   margin: 20px 0;
 }
-#bg-img {
-  position: absolute;
-  right: 20%;
-  height: 500px;
-}
 .form-box {
-  position: absolute;
-  top: 0;
-  right: 0;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -198,6 +192,15 @@ li {
   list-style: url(./chekMark.svg);
 }
 
+@media (max-width: 1400px) {
+  .form-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 40%;
+  }
+}
+
 @media (max-width: 1199px) {
   .teachers-cards {
     flex-wrap: wrap;
@@ -209,8 +212,65 @@ li {
     min-width: 250px;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1090px) {
+  .form-box {
+    max-width: 50%;
+  }
+}
+@media (max-width: 1030px) {
   .hero {
+    background: none;
+  }
+  .main_info {
+    background: url(./img/background_last.png);
+    gap: 10%;
+  }
+  .hero_container {
     flex-direction: column;
+  }
+  .form-box {
+    position: static;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+  #bg-img {
+    height: 400px;
+  }
+  .highlight {
+    min-width: 400px;
+  }
+  .hero_container .content {
+    width: 50%;
+  }
+  .hero_container .content span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 730px) {
+  .main_info {
+    position: relative;
+    height: 400px;
+  }
+  #bg-img {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero_container .content {
+    width: 100%;
+  }
+  .highlight {
+    width: 100%;
+    min-width: none;
+  }
+  .hero_container h1 {
+    max-width: 50%;
+  }
+  #bg-img {
+    height: 300px;
   }
 }
