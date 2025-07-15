@@ -24,6 +24,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 35px;
+  margin-top: 15px;
 }
 header img {
   height: 30px;
@@ -201,6 +202,13 @@ li {
   }
 }
 
+@media (max-width: 1270px) {
+  .features,
+  .levels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 1199px) {
   .teachers-cards {
     flex-wrap: wrap;
@@ -212,7 +220,6 @@ li {
     min-width: 250px;
   }
 }
-
 @media (max-width: 1090px) {
   .form-box {
     max-width: 50%;
@@ -263,10 +270,15 @@ li {
   .hero_container .content {
     width: 100%;
   }
+  .features,
+  .levels {
+    grid-template-columns: 1fr;
+  }
   .highlight {
     width: 100%;
     min-width: 0;
     background-size: contain;
+    min-height: 100px;
   }
   .hero_container h1 {
     max-width: 50%;
@@ -278,14 +290,45 @@ li {
   }
   .hero_container .content span {
     font-size: 25px;
+    display: inline-block;
     padding-bottom: 15px;
     left: 185px;
     text-align: left;
+    min-width: 200px;
     width: 40%;
     padding-top: 10px;
+    padding: 10px 0 15px 0;
   }
   .content h1 {
     font-size: 30px;
     line-height: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 430px) {
+  .content h1 {
+    font-size: 20px;
+    min-width: 172px;
+  }
+  .hero_container .content span {
+    font-size: 20px;
+    padding-top: 17px;
+  }
+  .container {
+    padding: 5px;
+    width: 94%;
+  }
+}
+@media (max-width: 329px) {
+  .content h1 {
+    font-size: 18px;
+  }
+  .conteiner {
+    min-width: 315px;
   }
 }
