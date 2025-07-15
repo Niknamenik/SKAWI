@@ -6,8 +6,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 @app.route('/')
-def home():
-    return "Skawi backend is running!"
+def index():
+    return send_from_directory( 'index.html')
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
