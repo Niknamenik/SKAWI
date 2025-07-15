@@ -20,7 +20,7 @@ mainForm.addEventListener("submit", (event) => {
 
 async function setUser(formData) {
   try {
-    const response = await fetch("http://127.0.0.1:5000/submit", {
+    const response = fetch("http://127.0.0.1:5000/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
