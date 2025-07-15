@@ -232,6 +232,7 @@ li {
   .main_info {
     background: url(./img/background_last.png);
     gap: 10%;
+    border-bottom-right-radius: 15px;
   }
   .hero_container {
     flex-direction: column;
@@ -239,7 +240,7 @@ li {
   .form-box {
     position: static;
     margin: 20px auto;
-    max-width: 90%;
+    max-width: 100%;
   }
   #bg-img {
     height: 400px;
@@ -269,6 +270,9 @@ li {
 @media (max-width: 650px) {
   .hero_container .content {
     width: 100%;
+  }
+  .main_info {
+    border-bottom-right-radius: 135px;
   }
   .features,
   .levels {
