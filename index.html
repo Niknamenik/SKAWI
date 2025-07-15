@@ -31,10 +31,20 @@
           </div>
           <form action="./no-action" class="form-box" id="main-form">
             <h3>Не відкладай на потім - запишись вже сьогодні</h3>
-            <input type="text" placeholder="Iм'я та Прізвище" required />
-            <input type="email" placeholder="Email" required />
-            <input type="number" placeholder="Номер телефону" required />
-            <select id="leng_select" required>
+            <input
+              type="text"
+              name="name"
+              placeholder="Iм'я та Прізвище"
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="number"
+              name="phone"
+              placeholder="Номер телефону"
+              required
+            />
+            <select id="leng_select" name="language" required>
               <option selected disabled hidden>Оберіть мову</option>
               <option value="Ang">Анлійська</option>
               <option value="polish">Польска</option>
@@ -89,7 +99,6 @@
               <li>Веселі інтерактивні вправи</li>
               <li>Командна мотивація</li>
               <li>Фокус на розмовну практику та граматику</li>
-              <li>Пробне заняття — <strong>безкоштовно!</strong></li>
             </ul>
           </div>
           <div class="level-box">
