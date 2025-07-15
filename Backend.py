@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import smtplib
 from email.mime.text import MIMEText
 from flask_cors import CORS
+from flask import send_from_directory
 
 app = Flask(__name__)
 CORS(app)
