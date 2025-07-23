@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
       email: form.email.value,
       phone: form.phone.value,
       lenguage: form.language.value,
-      id: Date.now(),
     };
 
     try {
