@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("main-form");
+  const subBtn = document.getElementById("submit_btn");
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    subBtn.disabled = true;
 
     const formData = {
       name: form.name.value,
@@ -10,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       phone: form.phone.value,
       language: form.language.value,
     };
+
+    console.log(formData);
 
     try {
       const response = await fetch(
@@ -31,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         alert("❌ Помилка: " + result.error);
       }
+
+      subBtn.disabled = false;
     } catch (error) {
       console.error("Помилка при надсиланні форми:", error);
       alert("❌ Сталася помилка. Спробуйте пізніше.");
