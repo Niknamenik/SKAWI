@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: form.name.value,
       email: form.email.value,
       phone: form.phone.value,
-      lenguage: form.language.value,
+      language: form.language.value,
     };
 
     try {
