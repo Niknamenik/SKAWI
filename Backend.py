@@ -2,13 +2,13 @@ from flask import Flask, request, jsonify
 import smtplib
 from email.mime.text import MIMEText
 from flask_cors import CORS
-from flask import send_from_directory
+from flask import send_file
 
 app = Flask(__name__)
 CORS(app)
 @app.route('/')
 def index():
-    return send_from_directory( 'index.html')
+    return send_file('index.html')
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
